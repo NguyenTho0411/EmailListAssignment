@@ -5,7 +5,7 @@ FROM tomcat:10.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Sao chép file .war vào thư mục webapps
-COPY target/EmailList-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/MurachEmailList.war
+COPY target/EmailList-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/EmailList.war
 
 # Expose port
 EXPOSE 8080
